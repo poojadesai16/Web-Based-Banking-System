@@ -1,0 +1,42 @@
+
+<HTML>
+<HEAD>
+<TITLE>Deposite</TITLE>
+</HEAD>
+<Body background="3.jpg">
+
+<h2><center><I><font color="Blue">Deposite Form</font></I></center><h2>
+
+<FORM NAME="DepositePage" ACTION="/CSCI6810/Deposite.jsp" METHOD ="post">
+<TABLE cellPadding="3" ALIGN="center">
+	      <TR bgcolor='#ECFAEB'>
+		                  <TD><B>Deposit To:</B></TD>
+		                  <TD>
+		                      <select size="1" name="CheckingOrSavings">
+		  		    	<option selected value="Checking">Checking</option>
+		  		    	<option value="Savings">Savings</option>
+		    	            </select>
+		                  </TD>
+		              </TR>
+
+		              <TR bgcolor='#F1F1FD'>
+		                  <TD><B>Amount to Deposit:</B></TD>
+		                  <TD>
+		                     <INPUT TYPE='text' NAME='AmountField' Value='' SIZE='15' placeholder='Enter Amount'>
+		                  </TD>
+		              </TR>
+          </TABLE>
+<P>
+<center><INPUT TYPE="BUTTON" VALUE="Make Deposit" onClick="checkInputs()"></center>
+</P>
+</FORM>
+</BODY>
+</HTML>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+function checkInputs()
+{
+}
+</SCRIPT>
+</HTML>

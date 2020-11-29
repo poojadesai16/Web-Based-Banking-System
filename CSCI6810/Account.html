@@ -1,0 +1,52 @@
+
+<HTML><HEAD></HEAD>
+<Body background="3.jpg">
+
+   <h2><center><I><font color="Blue">Open Account Form</font></I></center><h2>
+
+    <FORM NAME="AccountPage" ACTION="/CSCI6810/Account.jsp" METHOD ="POST">
+
+        <INPUT TYPE='hidden' NAME='UserID' VALUE='<%=request.getParameter("UserID")%>'>
+
+        <TABLE cellPadding=3 ALIGN='center'>
+
+        <TR bgcolor='#ECFAEB'>
+	      <TD><B>Choose Account Type:</b></TD>
+	         <TD>
+	            <select size="1" name="CheckingOrSavings">
+			 <option selected value="Checking">Checking</option>
+			  <option value="Savings">Savings</option>
+	  	          </select>
+	            </TD>
+            </TR>
+            <TR bgcolor='#F1F1FD'>
+	          <TD><B>Username:</B></TD>
+	              <TD>
+	              <INPUT TYPE='text' NAME='UsernameField' Value='' SIZE='25'>
+	              </TD>
+            </TR>
+             <TR bgcolor='#ECFAEB'>
+             <TD><B>Customer Name:</B></TD>
+	     	      <TD>
+	     	      	<INPUT TYPE='text' NAME='CustomerNameField' Value='' SIZE='25' placeholder='Enter Customer Name'>
+	     	      </TD>
+            </TR>
+            <TR bgcolor='#F1F1FD'>
+            <TD><B>Account Number:</B></TD>
+	    	        <TD>
+	    	        <INPUT TYPE='text' NAME='AccountNumberField' Value='' SIZE='25' placeholder='Enter Account Number'>
+	    	        </TD>
+            </TR>
+            <TR bgcolor='#ECFAEB'>
+            <TD><B>Opening Deposit:</B></TD>
+	    	    	  <TD>
+	    	    	   <INPUT TYPE='text' NAME='OpeningDepositField' Value='' SIZE='25' placeholder='Enter Opening deposit'>
+	    	    	  </TD>
+            </TR>
+            </TABLE><BR>
+	                <CENTER><INPUT TYPE="SUBMIT" NAME='submitBNTN' VALUE='Open' style="font-size:12pt;color:white;background-color:black;border:2px solid #336600;padding:7px"></CENTER><BR>
+	    	    </FORM>
+	    	    </BODY>
+	    	    </HTML>
+<SCRIPT LANGUAGE='JavaScript'>
+</SCRIPT>

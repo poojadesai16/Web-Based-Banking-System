@@ -1,0 +1,52 @@
+
+
+<HTML>
+<HEAD>
+<TITLE>Transfer</TITLE>
+</HEAD>
+<Body background="3.jpg">
+
+<h2><center><I><font color="Blue">Transfer Form</font></I></center><h2>
+
+<FORM NAME="TransferPage" ACTION="/CSCI6810/Transfer.jsp" METHOD ="post"> <!-- /OnlineSignUpServlet -->
+ <TABLE cellPadding=3 ALIGN='center'>
+
+            <TR bgcolor='#ECFAEB'>
+                <TD><B>Transfer From:</B></TD>
+                <TD>
+                    <select size="1" name="FromCheckingOrSavings">
+		    	<option selected value="Checking">Checking</option>
+		    	<option value="Savings">Savings</option>
+  	            </select>
+                </TD>
+            </TR>
+            <TR bgcolor='#F1F1FD'>
+                <TD><B>Transfer To:</B></TD>
+                <TD>
+                    <select size="1" name="ToCheckingOrSavings">
+		    	<option value="Checking">Checking</option>
+		    	<option selected value="Savings">Savings</option>
+  	            </select>
+                </TD>
+            </TR>
+            <TR bgcolor='#ECFAEB'>
+                <TD><B>Amount to Transfer:</B></TD>
+                <TD>
+                   <INPUT TYPE='text' NAME='AmountField' Value='0.0' SIZE='15' placeholder='Enter Amount'>
+                </TD>
+            </TR>
+          </TABLE>
+<P>
+<center><INPUT TYPE="BUTTON" VALUE="Make Transfer" onClick="checkInputs()"></center>
+</P>
+</FORM>
+</BODY>
+</HTML>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+function checkInputs()
+{
+}
+</SCRIPT>
+</HTML>
